@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class subject{
+            constructor(phy,chem,bio,maths,computer){
+                this.phy=phy;
+                this.chem=chem;
+                this.bio=bio;
+                this.maths=maths;
+                this.computer=computer;
+                this.totalmarks= this.phy+this.chem+this.bio+this.maths+this.computer;
+                this.result = this.totalmarks/5;
+            }
+               percentage(){
+                // console.log(this.result);
+                if(this.result>=90) {
+                    console.log("Grade A" ,this.result,"%");
+                }
+                else if(this.result>=80) {
+                    console.log("Grade B" ,this.result,"%");
+                }
+                else if(this.result>=70) {
+                    console.log("Grade C" ,this.result,"%");
+                }
+                else if(this.result>=60) {
+                    console.log("Grade D" ,this.result ,"%");
+                }
+                else if(this.result>=50){
+                    console.log("Grade E" ,this.result,"%");
+                }
+                else if(this.result>=40){
+                    console.log("Grade E" ,this.result,"%");
+                }
+               }
+        }
+        let stu1 = new subject(50,50,50,50,50);
+       stu1.percentage()
+
+    //    let stu2 = new subject(50,50,50,50,50);
+    //    stu2.percentage()
+
+    </script>
+</body>
+</html>
